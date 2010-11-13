@@ -172,7 +172,7 @@
 #define copy_to_user		0x0000e04c
 #define alloc 			0x00062080
 #define free 			0x000624c0
-#define USBRegisterDriver 	0
+#define USBRegisterDriver 	0x000d2228
 #define syscall_table		0x002ea728
 #define USBGetDeviceDescriptor	0x000d28e8
 #define USBOpenEndpoint		0x000d2904
@@ -189,9 +189,9 @@
 #define patch_func5		0x000505c8
 #define patch_func5_offset	0x0
 #define patch_func6		0x0002308c
-#define patch_func6_offset	0x0
+#define patch_func6_offset	0x80
 #define patch_func7		0x000e8280 // syscall_512
-#define patch_func7_offset	0x0
+#define patch_func7_offset	0x2c
 #define patch_func8		0x00057248 // lv2_open
 #define patch_func8_offset1	0x68 	   // lv2open update patch
 #define patch_func8_offset2	0x1cc  	   // lv2open update patch
@@ -251,9 +251,9 @@
 #define patch_func5		0x0005009c
 #define patch_func5_offset	0x0
 #define patch_func6		0x00023380
-#define patch_func6_offset	0x0
+#define patch_func6_offset	0x80
 #define patch_func7		0x000e8e6c // syscall_512
-#define patch_func7_offset	0x0
+#define patch_func7_offset	0x2c
 #define patch_func8		0x00056c3c // lv2_open
 #define patch_func8_offset1	0x68 	   // lv2open update patch
 #define patch_func8_offset2	0x1cc 	   // lv2open update patch
